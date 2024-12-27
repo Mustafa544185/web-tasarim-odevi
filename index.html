@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorant Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+NL+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+NL+Guides&family=Righteous&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div id="anasayfa"></div>
+    <header>
+        
+        <div class="logo"><i class="fa-solid fa-utensils"></i>Tat Yemekler</div>
+
+        <div class="head-liste">
+            <div class="head-liste-1">
+                <span class="menu-yazisi">Menü</span>
+                <div class="menu-list">
+                    <ul class="menu-liste">
+                        <li><a href="#indirimliyemekler">İndirimli Yemekler</a></li>
+                        <li><a href="#popüleryemekler">Popüler Yemekler</a></li>
+                        <li><a href="#tumyemekler">Tüm Yemekler</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head-liste-2"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+
+        <div class="header-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="bi bi-list"></i>
+            </label>
+        
+            <nav class="header-nav">
+                <ul>
+                    <li class="aktif"><a href="./index.html">Ana Sayfa</a></li>
+                    <li><a href="./hakkında.html">Hakkımızda</a></li><!--link-->
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <div class="sepet">
+        <div class="sepet-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="counter" class="sepet-sayac">0</div>
+        </div>
+    </div>
+
+     <div class="ana-yazı">
+        <h1 style="font-family:Righteous ;">Tat Yemeklerin Tek Adresi</h1> </br></br>
+        <div class="afiyet-olsun" id="indirimliyemekler">
+            <p style="color: yellow; text-align: center; padding-bottom: 1px; font-size: 40px;" >-Afiyet Olsun-</p>
+        </div>
+     </div>
+     <section class="indirim">
+        <h2>İndirimli Yemekler</h2>
+
+    <div class="menu-items">
+
+        <div class="menu-item">
+            <img src="img/etliekmek.png " alt="" width="300px" height="200px">
+            <h3>Konya Etliekmek</h3>
+            <div class="aciklama-ana">
+                <p>İçindekiler</p>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                    Etli ekmek, 180 gr. hamur, 100 gr. et, 100 gr. sebzeden oluşur
+                </div>
+            </div>
+            <span><del>300 TL</del>&nbsp; &nbsp; 250 TL</span>
+            <button class="button sayacartir" >Şipariş Ver</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/lahmacun.jpg" alt="" width="300px" height="200px">
+            <h3>Lahmacun</h3>
+            <div class="aciklama-ana">
+                <p>İçindekiler</p>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                    100gram kıyma domates maydanoz dolmalık yeşilbiber baharat
+                </div>
+            </div>
+            <span><del>180 TL</del>&nbsp; &nbsp; 120 TL</span>
+            <button class="button sayacartir">Şipariş Ver</button>
+        </div>
+
+        <div class="menu-item">
+            
+            <img src="img/yağsomunu.jpg" alt="" width="300px" height="200px">
+            <h3>Yağ somunu </h3>
+            <div class="aciklama-ana">
+                <p>İçindekiler</p>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                    180 Gr ekşi mayalı hamur, 125 Gr yağ somunu içi (peynir, küflü peynir, pastırma, kavurma, sucuk ve tereyağı)
+                </div>
+            </div>
+            <div id="popüleryemekler"></div>
+            <span><del>180 TL</del>&nbsp; &nbsp; 130 TL</span>
+            <button class="button sayacartir">Şipariş Ver</button>
+            
+        </div>
+        
+    </div>
+     </section>
+     <section class="indirim">
+        <h2>Popüler Yemekler</h2>
+
+    <div class="menu-items">
+        <div class="menu-item">
+            <img src="img/etlipilav.jpg" alt="" width="300px" height="200px">
+            <h3>Etli pilav</h3>
+            <div class="aciklama-ana">
+                <p>İçindekiler</p>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                    Etli pilavımızın içinde tereyağıyla kavrulmuş pirinç, tane tane pişmiş kuşbaşı dana eti, et suyu ve hafif baharatlarla harmanlanmış lezzet var
+                </div>
+            </div>
+            <span>140 TL</span>
+            <button class="button sayacartir" >Şipariş Ver</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/iskender.webp" alt="" width="300px" height="200px">
+            <h3>İskender</h3>
+            <div class="aciklama-ana">
+                <p>İçindekiler</p>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                    Kuzu eti, domates sosu, pide ekmeği, tereyağı ve yoğurt
+                </div>
+            </div>
+            <span>220 TL</span>
+            <button class="button sayacartir" >Şipariş Ver</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/cebic-yemegi.jpg" alt="" width="300px" height="200px">
+            <h3>Cebiç </h3>
+            <div class="aciklama-ana">
+                <p>İçindekiler</p>
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="info">
+                    (çebiç) veya kuzunun, tandır ateşinde pişirilmesi ve bulgur pilavının üzerine konulması suretiyle hazırlanır.
+                </div>
+            </div>
+            <div id="tumyemekler"></div>
+            <span>250 TL</span>
+            <button class="button sayacartir"  >Şipariş Ver</button>
+        </div> 
+    </div>
+     </section>
+     
+
+     <section class="menu">
+        <h2>Tüm Yemekler</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="img/BAMYA.webp" alt="" width="300px" height="200px">
+                <h3>Bamya</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        Bamya Zeytinyağ Soğan Sarımsak Domates
+                    </div>
+                </div>
+                <span> 75TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/mercimek.jpg" alt="" width="300px" height="200px">
+                <h3>Mercimek</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                     kırmızı mercimekk soğan havuç patates karabiber tuz
+                    </div>
+                </div>
+                <span>60 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/papara.jpg" alt="" width="300px" height="200px">
+                <h3>Papara</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        Paparamızın içinde bayat ekmek dilimleri, tereyağı, salçalı sos, et suyu veya tavuk suyu ve isteğe bağlı olarak üzerini süslemek için yoğurt ve baharatlar bulunuyor.
+                    </div>
+                </div>
+                <span>225 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/tantuni.webp" alt="" width="300px" height="200px">
+                <h3>Tantuni</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        Tantuni içinde ciğer eti, sıvıyağ, soğan, yenibahar, kimyon, pul biber, karabiber, tuz ve maydanoz kullanıldığı belirtilmektedir
+                    </div>
+                </div>
+                <span>175 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/tirit.jpg" alt="" width="300px" height="200px">
+                <h3>Tirit</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        kuzu eti, yoğurt,maydanoz,kurutulmuş ekmek,defne yaprağı, tuz, karabiber, süslemek için biber, domates.
+                    </div>
+                </div>
+                <span>195 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/arabaş.png" alt="" width="300px" height="200px">
+                <h3>Arabaş</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        kemiklerinden ayrılmış ve didiklenmiş yaban ördeği (tavuk, hindi) eti konulur. Salça,tavuk suyu,bol kırmızı pul biber
+                    </div>
+                </div>
+                <span>145 TL</span>
+                <button class="button sayacartir">Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/burger.png" alt="" width="300px" height="200px">
+                <h3>Burger</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        Köfte, ketçap, mayonez, peynir, domates, marul ve turşu
+                    </div>
+                </div>
+                <span>179 TL</span>
+                <button class="button sayacartir">Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/pizza.png" alt="" width="300px" height="200px">
+                <h3>Pizza</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        domates, peynir ve genellikle çeşitli diğer malzemelerle mantar, soğan, zeytin, et vb.
+                    </div>
+                </div>
+                <span>190 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/tost.png" alt="" width="300px" height="200px">
+                <h3>Tost</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        ost peyniri veya kaşar peyniri.Tavuk jambon, sucuk, salam, pastırma, dana jambon, hindi jambon gibi et ürünleri,Domates, Salatalık, Biber, Mayonez veya ketçap.
+                    </div>
+                </div>
+                <span>65 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/menemen.png" alt="" width="300px" height="200px">
+                <h3>Menemen</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                         Yumurta, domates, yeşil biber ve karabiber ve kırmızı biber
+                    </div>
+                </div>
+                <span>184 TL</span>
+                <button class="button sayacartir"  >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/cigköfte.png" alt="" width="300px" height="200px">
+                <h3>Çiğköfte</h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                        çiğ köftelik ince bulgur, maydanoz, nar ekşisi, kuru soğan, sarımsak, ceviz, ve çeşitli baharatlar
+                    </div>
+                </div>
+                <span>135 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/kızartma.png" alt="" width="300px" height="200px">
+                <h3>Kızartma </h3>
+                <div class="aciklama-ana">
+                    <p>İçindekiler</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="info">
+                    Patates                    </div>
+                </div>
+                <span>129 TL</span>
+                <button class="button sayacartir" >Şipariş Ver</button>
+            </div> 
+        </div>
+     </section>
+
+     <div class="iletisim-bilg" id="iletisim">
+        <div class="iletisim-no">
+            <div style="margin-bottom: 15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                  </svg>
+                  Ticaret Mah. Yayla Cad. Gül sk. No:42 KARATAY/KONYA
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                  +90 551 031 54 47
+            </div>
+            <div style="margin-bottom: 15px;" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                  +90 532 332 58 03
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+                  tatyemekler42@gmail.com
+            </div>
+        </div>
+        <div class="iletisim-konum">
+            <iframe style="width: 95%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.8295413325536!2d32.53370721136079!3d37.86427870688243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d09acb5133216f%3A0x206251d3311ff764!2sKTO%20Karatay%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1733922217630!5m2!1str!2str" width="830" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </div>
+
+     <footer class="footer">
+        <p>
+            &copy;2024 Tat Yemekler Web Sitesi
+            <a href="https://www.youtube.com/watch?v=UqppBZ-uJT0" target="_blank">Konya Lezzet Yemek</a>
+        </p>
+     </footer>
+    
+    <script>
+        
+        let clickCount = 0;
+
+        
+        const buttons = document.querySelectorAll('.sayacartir');
+
+      
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                clickCount++;
+                document.getElementById('counter').textContent = `${clickCount}`;
+            });
+        });
+    </script>
+
+</body>
+</html>
